@@ -1,5 +1,7 @@
 # Demo del juego "Piedra, Papel, Tijera"
 
+https://fabianfv.github.io/practica05---Piedra-Papel-Tijera/
+
 El juego tiene dos versiones de implementación: una usa if y la otra usa switch.
 
 Se muestra por consola el resultado de ejecutar:
