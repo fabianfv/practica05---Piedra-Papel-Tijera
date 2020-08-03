@@ -1,8 +1,4 @@
-const PIEDRA = 0
-const PAPEL = 1
-const TIJERA = 2
-
-function game(jugador1, jugador2) {
+function switch_game(jugador1, jugador2) {
   const OPCIONES = ["PIEDRA", "PAPEL", "TIJERA"]
   const JUGADA = OPCIONES[jugador1] + " vs " + OPCIONES[jugador2]
 
@@ -23,16 +19,18 @@ function game(jugador1, jugador2) {
 }
 
 // Empates
-game(PIEDRA, PIEDRA)
-game(PAPEL, PAPEL)
-game(TIJERA, TIJERA)
+console.log("\n" + "Ejecutando: switch.js")
+console.log("-".repeat(80) + "\n")
+switch_game(PIEDRA, PIEDRA)
+switch_game(PAPEL, PAPEL)
+switch_game(TIJERA, TIJERA)
 
 // Gana jugador1
-game(PAPEL, PIEDRA)
-game(PIEDRA, TIJERA)
-game(TIJERA, PAPEL)
+switch_game(PAPEL, PIEDRA)
+switch_game(PIEDRA, TIJERA)
+switch_game(TIJERA, PAPEL)
 
 //Gana jugador2
-game(PIEDRA, PAPEL)
-game(TIJERA, PIEDRA)
-game(PAPEL, TIJERA)
+switch_game(PIEDRA, PAPEL)
+switch_game(TIJERA, PIEDRA)
+switch_game(PAPEL, TIJERA)

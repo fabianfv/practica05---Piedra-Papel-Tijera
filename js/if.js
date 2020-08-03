@@ -1,8 +1,4 @@
-const PIEDRA = 0
-const PAPEL = 1
-const TIJERA = 2
-
-function game(jugador1, jugador2) {
+function if_game(jugador1, jugador2) {
   const OPCIONES = ["PIEDRA", "PAPEL", "TIJERA"]
 
   if (jugador1 === jugador2) {
@@ -18,17 +14,20 @@ function game(jugador1, jugador2) {
   }
 }
 
+console.log("\n" + "Ejecutando: if.js")
+console.log("-".repeat(80) + "\n")
+
 // Empates
-game(PIEDRA, PIEDRA)
-game(PAPEL, PAPEL)
-game(TIJERA, TIJERA)
+if_game(PIEDRA, PIEDRA)
+if_game(PAPEL, PAPEL)
+if_game(TIJERA, TIJERA)
 
 // Gana jugador1
-game(PAPEL, PIEDRA)
-game(PIEDRA, TIJERA)
-game(TIJERA, PAPEL)
+if_game(PAPEL, PIEDRA)
+if_game(PIEDRA, TIJERA)
+if_game(TIJERA, PAPEL)
 
 //Gana jugador2
-game(PIEDRA, PAPEL)
-game(TIJERA, PIEDRA)
-game(PAPEL, TIJERA)
+if_game(PIEDRA, PAPEL)
+if_game(TIJERA, PIEDRA)
+if_game(PAPEL, TIJERA)
