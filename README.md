@@ -1,5 +1,6 @@
 # Demo del juego "Piedra, Papel, Tijera"
 
+git
 El juego tiene dos versiones de implementación: una usa if y la otra usa switch.
 
 Se muestra por consola el resultado de ejecutar:
